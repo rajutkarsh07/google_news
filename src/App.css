@@ -27,6 +27,7 @@ body {
 
 .App {
   background-color: var(--background);
+  /* background-color: #fff; */
 }
 
 .contents {
@@ -39,14 +40,28 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 30px 0;
-  max-width: 965px;
+  /* max-width: 965px; */
+  /* border: 2px solid blue; */
+  max-width: 80%;
   margin: 0 auto;
 }
 
 .nav-header {
   color: var(--font);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
 }
 
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.g-logo {
+  height: 60px;
+}
 .articles {
   /* border: 2px solid black; */
   display: grid;
@@ -60,4 +75,16 @@ body {
 .article-image {
   width: 300px;
   height: auto;
+}
+
+@media screen and (max-width: 500px) {
+  .nav-header {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .nav-header {
+    font-size: 18px;
+  }
 }

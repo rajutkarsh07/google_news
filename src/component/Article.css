@@ -15,10 +15,8 @@
 }
 
 .article {
-  /* border: 2px solid brown; */
   padding: 20px 15px;
   width: 300px;
-  /* light/light+ */
   background: var(--theme);
   box-shadow: 3px 10px 10px rgba(0, 0, 0, 0.2), -3px 6px 6px rgba(0, 0, 0, 0.13);
   border-radius: 5px;
@@ -36,8 +34,6 @@
   font-weight: 500;
   font-size: 18px;
   line-height: 23px;
-  /* dark/dark */
-
   color: var(--font);
 }
 
@@ -64,9 +60,6 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 23px;
-
-  /* dark/dark */
-
   color: var(--font);
 }
 
@@ -75,9 +68,6 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-
-  /* dark/dark */
-
   color: var(--font);
 }
 
@@ -101,4 +91,32 @@
   margin-top: 50px;
   color: var(--font);
   background-color: var(--footer);
+}
+
+@media screen and (max-width: 400px) {
+  .article {
+    padding: 15px 10px;
+    width: 300px;
+  }
+  .title {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .author {
+    font-size: 12px;
+  }
+
+  .published-date {
+    font-size: 12px;
+  }
+
+  .content {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .article-link {
+    font-size: 12px;
+  }
 }
