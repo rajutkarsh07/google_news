@@ -11,7 +11,7 @@ function App() {
 
   const title = async (title) => {
     const response = await fetch(
-      `https://newsapi.org/v2/everything?q=apple&from=2022-09-30&to=2022-09-30&sortBy=popularity&apiKey=e0e98302734542a992e8ce7a3aa6fdd2`
+      `https://newsapi.org/v2/everything?q=apple&from=2022-09-30&to=2022-09-30&sortBy=popularity&apiKey=${process.env.REACT_APP_NEWS_API_KEY}`
     );
     const data = await response.json();
     setNews(data.articles);

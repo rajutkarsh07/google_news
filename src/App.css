@@ -21,18 +21,11 @@
 }
 
 body {
-  /* background-color: var(--background); */
   font-family: "Poppins", sans-serif;
 }
 
 .App {
   background-color: var(--background);
-  /* background-color: #fff; */
-}
-
-.contents {
-  /* max-width: 965px; */
-  /* margin: 0 auto; */
 }
 
 .navbar {
@@ -40,8 +33,6 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 30px 0;
-  /* max-width: 965px; */
-  /* border: 2px solid blue; */
   max-width: 80%;
   margin: 0 auto;
 }
@@ -63,7 +54,6 @@ body {
   height: 60px;
 }
 .articles {
-  /* border: 2px solid black; */
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   max-width: 964px;
