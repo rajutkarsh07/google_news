@@ -1,9 +1,13 @@
 import React from "react";
 import "./Article.css";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
+
 const Article = ({ news }) => {
   return (
-    <div className="article" key={news.source.id}>
+    <div className="article" key={news.source.id} data-aos="fade-up">
       <div className="card">
         <h2 className="title">{news.title}</h2>
         <img src={news.urlToImage} alt="images" className="article-image" />
